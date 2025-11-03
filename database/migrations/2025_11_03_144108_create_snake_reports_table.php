@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('snake_reports', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->string('snake_type')->nullable();
+            $table->string('location');
+            $table->text('description')->nullable();
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }
