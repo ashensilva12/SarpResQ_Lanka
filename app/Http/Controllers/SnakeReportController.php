@@ -16,6 +16,11 @@ class SnakeReportController extends Controller
             'description'=>'nullable|string',
         ]);
 
-        
+        SnakeReport::create([
+            'user_id'=>auth()->id(),
+            'snake_type'=>$request->snake_type,
+            'location'=>$request->location,
+            'description'=>$request->description,
+        ]);
     }
 }
