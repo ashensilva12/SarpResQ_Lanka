@@ -1,4 +1,8 @@
+<?php config(['app.name' => 'SarpResQ_Lanka']); ?>
 @extends('layouts.bootstrap')
+@section('brand')
+  <span class="navbar-brand"><img src="{{ asset('images/logo.jpg') }}" alt="SarpResQ_Lanka" style="height:28px;object-fit:contain;" class="me-2">SarpResQ_Lanka</span>
+@endsection
 
 @section('title','Register')
 
