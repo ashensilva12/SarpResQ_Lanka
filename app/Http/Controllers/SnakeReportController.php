@@ -9,5 +9,7 @@ class SnakeReportController extends Controller
     public function create(){
         return view('snake.report');
     }
-    
+    public function store(Request $request){
+        
+    }
 }
