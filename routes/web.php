@@ -23,3 +23,5 @@ Route::middleware(['auth'])->group(function () {
     route::post('/snake-reports',[SnakeReportController::class,'store'])->name('snake.store');
 });
 
+require __DIR__.'/auth.php';
+
