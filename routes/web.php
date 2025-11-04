@@ -21,6 +21,8 @@ Route::middleware('auth')->group(function () {
 Route::middleware(['auth'])->group(function () {
     route::get('/snake-reports',[SnakeReportController::class,'create'])->name('snake.reports');
     route::post('/snake-reports',[SnakeReportController::class,'store'])->name('snake.store');
+    // Friendly URL for reporting a snake (keeps auth requirement)
+    route::get('/report-snake', [SnakeReportController::class, 'create'])->name('report-snake');
 });
 
 require __DIR__.'/auth.php';
