@@ -4,9 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SnakeReportController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Redirect root URL to the login page to avoid navigating to the default welcome view
+Route::redirect('/', '/login');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
