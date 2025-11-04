@@ -1,14 +1,11 @@
 <?php config(['app.name' => 'SarpResQ_Lanka']); ?>
 @extends('layouts.bootstrap')
 
-@section('title','Sign in')
-
-@section('hero')
-  <div class="py-3">
-    <h2 class="h4">Sign in</h2>
-    <p class="text-muted small mb-0">Access the dashboard and report sightings</p>
-  </div>
+@section('brand')
+  <span class="navbar-brand"><img src="{{ asset('images/logo.jpg') }}" alt="SarpResQ_Lanka" style="height:28px;object-fit:contain;" class="me-2">SarpResQ_Lanka</span>
 @endsection
+
+@section('title','Sign in')
 
 @section('content')
   <div class="row justify-content-center">
