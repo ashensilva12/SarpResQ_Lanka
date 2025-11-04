@@ -10,6 +10,12 @@ class SnakeReportController extends Controller
         return view('snake.report');
     }
     public function store(Request $request){
+        $request->validate([
+            'location'=>'required',
+            'snake_type'=>'nullable|string',
+            'description'=>'nullable|string',
+        ]);
+
         
     }
 }
