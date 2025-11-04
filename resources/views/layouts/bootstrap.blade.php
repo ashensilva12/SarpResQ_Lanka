@@ -22,7 +22,11 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}"><i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>{{ config('app.name') }}</a>
+        @hasSection('brand')
+          @yield('brand')
+        @else
+          <a class="navbar-brand" href="{{ url('/') }}"><i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>{{ config('app.name') }}</a>
+        @endif
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
