@@ -27,3 +27,12 @@ Route::middleware(['auth'])->group(function () {
 
 require __DIR__.'/auth.php';
 
+// Serve logo from project pics/ directory (so you don't need to copy into public/)
+Route::get('/images/logo.jpg', function () {
+    $path = base_path('pics/logo.jpg');
+    if (file_exists($path)) {
+        return response()->file($path);
+    }
+    abort(404);
+});
+
