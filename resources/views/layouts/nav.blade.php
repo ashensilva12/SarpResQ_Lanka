@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'SarpResQ Lanka')</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/nav.css') }}" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-900">
 
     {{-- Navbar --}}
-    <nav class="bg-green-600 text-white p-4 flex justify-between">
-        <h1 class="font-bold text-lg">🐍 SarpResQ Lanka</h1>
-        <div>
-            <a href="{{ route('home') }}" class="px-2 hover:underline">Home</a>
-            <a href="/report-snake" class="px-2 hover:underline">Report</a>
-            <a href="/my-reports" class="px-2 hover:underline">My Reports</a>
-            <a href="/dashboard" class="px-2 hover:underline">Dashboard</a>
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="brand">
+            <h1>🐍 SarpResQ Lanka</h1>
+        </div>
+        <div class="menu">
+            <a href="{{ route('home') }}">Home</a>
+            <a href="{{ route('report-snake') }}">Report</a>
+            <a href="/my-reports">My Reports</a>
+            <a href="{{ route('dashboard') }}">Dashboard</a>
         </div>
     </nav>
 
