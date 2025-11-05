@@ -1,6 +1,13 @@
-<x-app-layout>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Report</title>
+    <link rel="stylesheet" href="{{ asset('css/report.css') }}">
+</head>
+<body>
+    
     <div class="report-container">
-        <link rel="stylesheet" href="{{ asset('css/report.css') }}">
 
         <h2>🐍 Report a Snake Sighting</h2>
 
@@ -31,4 +38,5 @@
             <div class="report-note">We appreciate accurate locations — add landmarks if possible.</div>
         </form>
     </div>
-</x-app-layout>
+</body>
+</html>
