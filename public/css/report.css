@@ -1,0 +1,24 @@
+/* Styles for snake report page */
+:root{
+  --card-bg: #ffffff;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #10b981;
+}
+.report-container{
+  max-width:720px;
+  margin:2rem auto;
+  padding:1.25rem 1.5rem;
+  background:var(--card-bg);
+  border:1px solid var(--border);
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(16,24,40,0.04);
+}
+.report-container h2{font-size:1.25rem;margin:0 0 0.75rem 0;color:#111827}
+.report-label{display:block;margin-bottom:0.35rem;font-weight:600;color:#111827}
+.report-input, .report-textarea{width:100%;padding:0.6rem 0.75rem;border:1px solid var(--border);border-radius:8px;font-size:1rem;margin-bottom:0.8rem;background:#fff}
+.report-textarea{min-height:120px;resize:vertical}
+.report-success{background:#ecfdf5;color:#065f46;padding:0.5rem 0.75rem;border-radius:6px;margin-bottom:1rem}
+.report-btn{background:var(--accent);color:#fff;padding:0.6rem 1rem;border:0;border-radius:8px;cursor:pointer;font-weight:700}
+.report-btn:hover{opacity:0.95}
+.report-note{font-size:0.9rem;color:var(--muted);margin-top:0.5rem}
