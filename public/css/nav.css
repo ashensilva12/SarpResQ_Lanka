@@ -8,6 +8,7 @@
 .site-nav{
   background: linear-gradient(180deg,var(--sr-green-600),var(--sr-green-500));
   color:var(--sr-white);
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
   padding:0.85rem 1rem;
   display:flex;
   justify-content:space-between;
