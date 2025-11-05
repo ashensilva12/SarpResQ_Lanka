@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="{{ asset('css/report.css') }}">
 </head>
 <body>
-    
+    @section('brand')
+        <span class="navbar-brand"><img src="{{ asset('images/logo.jpg') }}" alt="SarpResQ_Lanka" style="height:28px;object-fit:contain;" class="me-2">SarpResQ_Lanka</span>
+    @endsection
+    @extends('layouts.bootstrap')
     <div class="report-container">
 
         <h2>🐍 Report a Snake Sighting</h2>
