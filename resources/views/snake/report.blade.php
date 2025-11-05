@@ -6,7 +6,7 @@
     <span class="navbar-brand"><img src="{{ asset('images/logo.jpg') }}" alt="SarpResQ_Lanka" style="height:28px;object-fit:contain;" class="me-2">SarpResQ_Lanka</span>
 @endsection
 @section('hero')
-    {{-- hide default layout hero (prevents app name / "Laravel" showing above content) --}}
+    <div style="display:none" aria-hidden="true"></div>
 @endsection
 
 @section('content')
