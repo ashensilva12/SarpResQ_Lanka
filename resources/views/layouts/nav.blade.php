@@ -12,7 +12,7 @@
     {{-- Navbar --}}
     <nav class="site-nav" aria-label="Main navigation">
         <div class="brand">
-            <h1>🐍 SarpResQ Lanka</h1>
+            <h1>SarpResQ Lanka</h1>
         </div>
         <div class="menu">
             <a href="{{ route('home') }}">Home</a>
