@@ -6,6 +6,10 @@
 
 @section('title','Register')
 
+@section('hero')
+    <div style="display:none" aria-hidden="true"></div>
+@endsection
+
 @section('content')
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8">
