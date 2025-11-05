@@ -1,0 +1,31 @@
+/* Navbar styles for SarpResQ_Lanka - green & white theme */
+:root{
+  --sr-green-600:#16a34a;
+  --sr-green-500:#10b981;
+  --sr-white:#ffffff;
+  --sr-muted:rgba(255,255,255,0.9);
+}
+.site-nav{
+  background: linear-gradient(180deg,var(--sr-green-600),var(--sr-green-500));
+  color:var(--sr-white);
+  padding:0.85rem 1rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+}
+.site-nav .brand{display:flex;align-items:center;gap:0.5rem;font-weight:700}
+.site-nav .brand h1{margin:0;font-size:1.05rem;color:var(--sr-white)}
+.site-nav .menu{display:flex;gap:0.5rem;align-items:center}
+.site-nav a{color:var(--sr-white);text-decoration:none;padding:0.4rem 0.6rem;border-radius:6px;transition:background .12s ease,color .12s ease}
+.site-nav a:hover{background:rgba(255,255,255,0.08)}
+.site-nav a.active{background:rgba(255,255,255,0.12);font-weight:700}
+.site-nav .cta{background:var(--sr-white);color:var(--sr-green-600);padding:0.4rem 0.7rem;border-radius:8px;font-weight:700}
+.site-nav .cta:hover{opacity:0.95}
+
+/* Mobile: stack items */
+@media (max-width:640px){
+  .site-nav{flex-direction:column;align-items:stretch}
+  .site-nav .menu{justify-content:flex-start;flex-wrap:wrap}
+  .site-nav .brand{margin-bottom:0.5rem}
+}
