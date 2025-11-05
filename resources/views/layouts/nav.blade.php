@@ -12,7 +12,7 @@
     <nav class="bg-green-600 text-white p-4 flex justify-between">
         <h1 class="font-bold text-lg">🐍 SarpResQ Lanka</h1>
         <div>
-            <a href="/" class="px-2 hover:underline">Home</a>
+            <a href="{{ route('home') }}" class="px-2 hover:underline">Home</a>
             <a href="/report-snake" class="px-2 hover:underline">Report</a>
             <a href="/my-reports" class="px-2 hover:underline">My Reports</a>
             <a href="/dashboard" class="px-2 hover:underline">Dashboard</a>
