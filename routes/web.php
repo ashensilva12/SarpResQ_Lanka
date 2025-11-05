@@ -34,4 +34,9 @@ Route::get('/images/logo.jpg', function () {
     }
     abort(404);
 });
+ 
+// Public home page (custom)
+Route::get('/home', function () {
+    return view('pages.home');
+})->name('home');
 
