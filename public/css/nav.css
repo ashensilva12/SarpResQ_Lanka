@@ -18,7 +18,7 @@
 .site-nav .brand h1{margin:0;font-size:1.05rem;color:var(--sr-white)}
 .site-nav .brand .brand-link{display:flex;align-items:center;gap:0.6rem;text-decoration:none}
 .site-nav .brand .brand-logo{height:34px;object-fit:contain;border-radius:6px}
-.site-nav .menu{display:flex;gap:0.5rem;align-items:center}
+.site-nav .menu{display:flex;gap:3rem;align-items:center}
 .site-nav a{color:var(--sr-white);text-decoration:none;padding:0.4rem 0.6rem;border-radius:6px;transition:background .12s ease,color .12s ease}
 .site-nav a:hover{background:rgba(255,255,255,0.08)}
 .site-nav a.active{background:rgba(255,255,255,0.12);font-weight:700}
