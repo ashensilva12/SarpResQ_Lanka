@@ -28,13 +28,15 @@
     </nav>
 
     {{-- Page Content --}}
-    <div class="container mx-auto p-6">
+    <main class="site-content container mx-auto p-6">
         @yield('content')
-    </div>
+    </main>
 
     {{-- Footer --}}
-    <footer class="bg-gray-800 text-white text-center p-3 mt-10">
-        <p>&copy; {{ date('Y') }} SarpResQ Lanka | All Rights Reserved</p>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p>&copy; {{ date('Y') }} SarpResQ Lanka | All Rights Reserved</p>
+        </div>
     </footer>
 
 </body>
