@@ -1,16 +1,14 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Report</title>
-    <link rel="stylesheet" href="{{ asset('css/report.css') }}">
-</head>
-<body>
-    @section('brand')
-        <span class="navbar-brand"><img src="{{ asset('images/logo.jpg') }}" alt="SarpResQ_Lanka" style="height:28px;object-fit:contain;" class="me-2">SarpResQ_Lanka</span>
-    @endsection
-    @extends('layouts.bootstrap')
+@extends('layouts.bootstrap')
+
+@section('title', 'Snake Report')
+
+@section('brand')
+    <span class="navbar-brand"><img src="{{ asset('images/logo.jpg') }}" alt="SarpResQ_Lanka" style="height:28px;object-fit:contain;" class="me-2">SarpResQ_Lanka</span>
+@endsection
+
+@section('content')
     <div class="report-container">
+        <link rel="stylesheet" href="{{ asset('css/report.css') }}">
 
         <h2>🐍 Report a Snake Sighting</h2>
 
@@ -22,14 +20,16 @@
 
         <form method="POST" action="{{ route('snake.store') }}">
             @csrf
-            <div>
-                <label class="report-label">Snake Type (if known)</label>
-                <input class="report-input" type="text" name="snake_type" placeholder="e.g. Cobra">
-            </div>
+            <div class="report-grid">
+                <div>
+                    <label class="report-label">Snake Type (if known)</label>
+                    <input class="report-input" type="text" name="snake_type" placeholder="e.g. Cobra">
+                </div>
 
-            <div>
-                <label class="report-label">Location *</label>
-                <input class="report-input" type="text" name="location" required placeholder="Enter location">
+                <div>
+                    <label class="report-label">Location *</label>
+                    <input class="report-input" type="text" name="location" required placeholder="Enter location">
+                </div>
             </div>
 
             <div>
@@ -41,5 +41,4 @@
             <div class="report-note">We appreciate accurate locations — add landmarks if possible.</div>
         </form>
     </div>
-</body>
-</html>
+@endsection
